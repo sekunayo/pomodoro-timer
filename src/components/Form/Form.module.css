@@ -1,0 +1,23 @@
+.form {
+  width: 540px;
+  height: 464px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.form__header {
+  padding: 34px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e1e1;
+}
+
+.form__header_title {
+  color: #161932;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

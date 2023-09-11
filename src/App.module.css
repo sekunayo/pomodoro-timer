@@ -1,0 +1,19 @@
+.app {
+  height: 100vh;
+  background-color: #1e213f;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.app__logo {
+  color: #d7e0ff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

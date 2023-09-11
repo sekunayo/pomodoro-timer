@@ -1,0 +1,54 @@
+.timer {
+  width: 410px;
+  height: 410px;
+  /* border-radius: 50%;
+  padding: 24px;
+  background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+  box-shadow: 50px 50px 100px 0px #121530, -50px -50px 100px 0px #272c5a;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.timer__progress_inner {
+  width: 362px;
+  height: 362px;
+  background-color: #161932;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__progress_outer {
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  padding: 24px;
+  box-shadow: 50px 50px 100px 0px #121530, -50px -50px 100px 0px #272c5a;
+}
+
+.timer__content_text {
+  color: #d7e0ff;
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -5px;
+}
+
+.timer svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.timer circle {
+  fill: none;
+  stroke: coral;
+  stroke-width: 10px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 100;
+}
