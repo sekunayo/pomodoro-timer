@@ -5,22 +5,46 @@ import { ReactComponent as Settings } from "./assets/icons/settings.svg";
 import Modal from "./components/Modal";
 import { useState } from "react";
 import Form from "./components/Form";
+import Tab from "./components/Tab";
 
 function App() {
-  const [toggleModal, setToggleModal] = useState(true);
+  const [toggleModal, setToggleModal] = useState(false);
+  const [currentBackgroundColor, setCurrentBackgroundColor] =
+    useState("#F87070");
+  const [currentFontValue, setCurrentFontValue] = useState("Kumbh Sans");
+
+  const handleFontValueChange = (value: string) => {
+    setCurrentFontValue(value);
+  };
+
+  const handleCurrentColor = (value: string) => {
+    setCurrentBackgroundColor(value);
+  };
+
   const closeModal = () => {
     setToggleModal(false);
   };
 
   return (
-    <div className={styles.app}>
+    <div style={{ fontFamily: currentFontValue }} className={styles.app}>
       <h1 className={styles.app__logo}>pomodoro</h1>
+      <Tab />
       <Timer />
-      <Settings />
+      <button onClick={() => setToggleModal(true)}>
+        <Settings />
+      </button>
 
-      <Modal closeModal={closeModal}>
-        <Form />
-      </Modal>
+      {toggleModal && (
+        <Modal closeModal={closeModal}>
+          <Form
+            handleClose={closeModal}
+            handleCurrentFont={handleFontValueChange}
+            handleCurrentColor={handleCurrentColor}
+            fontValue={currentFontValue}
+            color={currentBackgroundColor}
+          />
+        </Modal>
+      )}
     </div>
   );
 }

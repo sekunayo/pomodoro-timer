@@ -7,7 +7,7 @@ const Timer = () => {
       <div className={styles.timer__progress_outer}>
         <div className={styles.timer__progress_inner}>
           <svg xmlns="http://www.w3.org/2000/svg" width="410" height="410">
-            <circle cx="180" cy="180" r="170" stroke-linecap="round" />
+            <circle cx="180" cy="180" r="170" strokeLinecap="round" />
           </svg>
 
           <div className={styles.timer__content}>

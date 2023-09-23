@@ -21,3 +21,31 @@
   font-weight: 700;
   line-height: normal;
 }
+
+.form__row {
+  padding: 24px 0px;
+  border-bottom: 1px solid rgba(22, 25, 50, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form__row_inner {
+  display: flex;
+  gap: 16px;
+}
+
+.form__container {
+  padding: 0px 40px;
+}
+
+.form__row_title {
+  color: #161932;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}

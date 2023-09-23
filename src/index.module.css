@@ -21,7 +21,6 @@ body {
   direction: ltr;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Kumbh Sans";
 }
 
 main {
@@ -227,7 +226,6 @@ dd {
 }
 
 p {
-  font-family: "Kumbh Sans";
   display: block;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -241,7 +239,6 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: "Kumbh Sans";
 }
 
 ul,
@@ -281,68 +278,4 @@ button:hover {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-.react-datepicker-wrapper {
-  width: 100%;
-  height: 48px;
-}
-
-.react-datepicker__header {
-  border: none !important;
-  background-color: transparent !important;
-  padding: 8px 0px 32px 0px !important;
-}
-
-.react-datepicker {
-  border: none !important;
-  padding: 31px 20px;
-}
-
-.react-datepicker__day {
-  color: #0c0e16 !important;
-  font-family: Playfair Display !important;
-  font-size: 15px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 15px !important;
-  letter-spacing: -0.25px !important;
-}
-
-.react-datepicker__day--selected {
-  color: #7c5dfa !important;
-  background-color: transparent !important;
-}
-
-.react-datepicker__day-names {
-  display: none;
-}
-
-.react-datepicker__navigation {
-  top: 40px !important;
-}
-
-.react-datepicker__input-container input {
-  padding-left: 20px;
-  color: #0c0e16;
-  font-family: Playfair Display;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: -0.25px;
-}
-
-.react-datepicker__input-container input::placeholder {
-  color: "#0C0E16";
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
